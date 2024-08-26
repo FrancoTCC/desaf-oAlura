@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F3F5FC;
+    height: 100vh;
+    
+}
+header{
+    width: 120px;
+    height: 48px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 0 80px;
+}
+#logo{
+    height: 48px;
+    width: 38px;
+}
+.main-container{
+    width: 100%;
+    height: calc(100vh - 128px);
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+section{
+    height: 100%;
+
+
+}
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.section1--container{
+    height: 100%;
+    width: 100%;
+}
+.container-texto{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+#aviso{
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  align-self: flex-start;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+
+
+}
+.exclamation{
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  background-color: #495057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.area-texto{
+    height: 90%;
+    display: block;
+    resize: none;
+    font-size: 25px;
+    border: solid 1px #e5e7ee;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    box-shadow: 1px 2px 2px 1px #eef0f6;
+    color: #0A3871;
+    
+}
+.area-texto::placeholder{
+
+  color: #0A3871;
+  
+}
+#area-texto{
+    border-radius: 14px;
+    padding: 20px;
+    outline: none;
+    background-color: #F3F5FC;
+}
+.boton-encriptar, .boton-desencriptar{
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+}
+.botones{
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+#boton1{
+    background-color: #0A3871;
+    color: white;
+    width: 100%;
+}
+#boton1:hover{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+#boton2{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 100%;
+}
+#boton2:hover{
+    background-color: #0A3871;
+    color: white;
+}
+.seccion2{
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 1px #978e8e;
+    padding: 10px;
+    margin-top: -100px;
+    height: calc(100% + 100px);
+}
+.imagen{
+    padding-top: 5em;
+    box-sizing: border-box;
+}
+#imagen{
+    margin-left: 20px;
+    width: 90%;
+    height: 90%;
+}
+.subtitulo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.texto{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: -50px;
+}
+#texto{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+#texto2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.resultado{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#resultado{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+.copiar{
+    margin-top: 12em;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.boton-copiar{
+    width: 65%;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 14px;
+    cursor: pointer;
+    
+    
+}
+#copiar{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+#copiar:hover{
+    background-color: #0A3871;
+    color: white;
+}
+
+
+/* Estilos generales */
+#mensaje-sin-encriptar, #mensaje-encriptado {
+    display: none;
+    
+}
+
+/* Muestra la sección de mensaje sin encriptar por defecto */
+#mensaje-sin-encriptar {
+    display: block;
+    
+}
+
+
+@media (max-width: 600px) {
+    .botones{
+        margin-top: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+    }
+    .seccion2{
+        margin-top: 0px;
+    }
+}
+
+@media  (max-width: 1024px) {
+    main{
+        margin-bottom: 100px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;;
+    
+    }
+    .seccion2{
+   
+        width: 100%;
+    }
+    .seccion1{
+        margin-bottom: 130px;
+    }
+    #imagen{
+        display: none;
+    }
+    .copiar{
+        margin-top: 0px;
+        height: 10%;
+    }
+    #resultado{
+        width: 100%;
+        
+    }
+
+    
+}
+
+

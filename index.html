@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge 1</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/logo.png" alt="logo">
+    </header>
+    <main>
+        <div class="main-container">
+
+            <section class="seccion1">
+                <div class="section1--container">
+                    <div class="container-texto">
+                        <textarea id="area-texto" class="area-texto" placeholder="Ingrese texto aquí"></textarea>
+                        <div id="aviso"><span class="exclamation">!</span> <p>Solo letras minúsculas y sin acentos</p></div>
+                    </div>
+                    <div class="botones">
+                        <input type="button" value="Encriptar" class="boton-encriptar" id="boton1" onclick="encriptar()">
+                        <input type="button" value="Desencriptar" class="boton-desencriptar" id="boton2" onclick="desencriptar()">
+                    </div>
+                </div>
+            </section>
+            <section class="seccion2">
+                <div class="section2--container">
+                    <div class="mensaje-sin-encriptar" id="mensaje-sin-encriptar">
+                        <div class="imagen">
+                            <img id="imagen" src="./img/persona.png" alt="imagen">
+                        </div>
+                        <h2 id="texto">Ningún mensaje fue encontrado</h2>
+                        <p id="texto2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                    <div class="mensaje-encriptado" id="mensaje-encriptado">
+                        <div class="resultado">
+                            <textarea id="resultado" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="copiar">
+                            <button class="boton-copiar" id="copiar" type="button" onclick="copy()">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
